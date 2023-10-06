@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,42 +10,67 @@
     <link rel="shortcut icon"
         href="https://145363050-979009888506481709.preview.editmysite.com/uploads/b/145363050-225300881326961353/files/time_zone.jpg"
         type="image/x-icon">
-        <style>
-        @font-face { font-family:Book Antiqua Font ; src: url('Book Antiqua Font.ttf'); } 
-        #l {
-         font-family: Book Antiqua Font
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <style>
+         /* @font-face {
+            font-family: Book Antiqua Font;
+            src: url('Book Antiqua Font.ttf');
+        } */
+
+        #para{
+            margin-left: 650px;
         }
-        @font-face { font-family:Lucida Sans; src: url('LTYPE.TTF'); } 
-        #g {
-         font-family: Lucida Sans 
+        #para1{
+            margin-left: 600px;
+        }
+        #btn{
+            margin-left: 650px;
         }
 
-        body { background-image:url('bg.gif'); background-size:1600px; }
-    </style> 
-      
+/*
+        @font-face {
+            font-family: Lucida Sans;
+            src: url('LTYPE.TTF');
+        }
+
+        #g {
+            font-family: Lucida Sans
+        } */
+
+        body {
+            background-image: url('bg.gif');
+            background-size: 1600px;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
 
 </head>
+
 <body class="">
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
     <script>
-         let home = ()=>{
+        let home = () => {
             location.replace("/index.html")
         }
-        let about = ()=>{
+        let about = () => {
             location.replace("/about.html")
         }
-        let contact = ()=>{
+        let contact = () => {
             location.replace("/contact.html")
         }
-        let shop = ()=>{
+        let shop = () => {
             location.replace("/shop.html")
         }
-        let bots = ()=>{
+        let bots = () => {
             location.replace("/our_bots.html")
         }
     </script>
     <header>
-        <nav class="bg-green-600"><ul class="flex xl:p-4 p-3 space-x-4 space-x-7">
+        <nav class="bg-green-600">
+            <ul class="flex xl:p-4 p-3 space-x-4 space-x-7">
                 <img src="time_zone.jpg" class=" xl:w-7 w-6 rounded-full" alt="">
                 <li class="xl:mr-36 text-blue-600">Time Zone</li>
                 <li class="cursor-pointer text-white" onclick="home()">Home</li>
@@ -54,16 +80,23 @@
                 <li class="cursor-pointer text-white" onclick="shop()">Shop</li>
             </ul>
         </nav>
-        
+
     </header>
     <main class="">
 
-        <img src="time_zone.jpg" class="xl:ml-[680px] w-24 ml-40 mt-5 md:ml-[330px] xl:mt-10 xl:w-40" alt="">
-        <p class="xl:text-5xl xl:ml-[635px] text-[#F7E29B] xl:mt-5 mt-5 ml-[165px] md:ml-[335px] font-bold" id="g">TIME ZONE</p>
-        <p class="xl:text-3xl xl:ml-[615px] ml-[125px] xl:mt-10 mt-5 font-book antiqua font-bold md:ml-[290px]" id="l">The best Discord server</p>
-        <button class="xl:mt-10 xl:ml-[655px] bg-blue-700 xl:p-5 mt-5 ml-[130px] p-2 xl:text-xl rounded-md md:ml-[295px]"><a href="https://discord.com/invite/44b8TeRCuS">Join TIME ZONE now</a></button>
-        <audio class="invisible" src="https://file-examples.com/storage/fec91aecf9647d0f79cc0bb/2017/11/file_example_MP3_700KB.mp3" loop="true" width="2" height="0" controls></audio>
-        
+        <img src="time_zone.jpg" class="xl:ml-[680px] w-24 ml-40 mt-5 md:ml-[330px] xl:mt-10 xl:w-40" alt="Time zone logo" id="img">
+        <p class="xl:text-5xl xl:ml-[635px] text-[#F7E29B] xl:mt-5 mt-5 ml-[165px] md:ml-[335px] font-bold" id="para">TIME
+            ZONE</p>
+        <p class="xl:text-3xl xl:ml-[615px] ml-[125px] xl:mt-10 mt-5 font-book antiqua font-bold md:ml-[290px]" id="para1">
+            The best Discord server</p>
+        <button
+            class="xl:mt-10 xl:ml-[655px] bg-blue-700 xl:p-5 mt-5 ml-[130px] p-2 xl:text-xl rounded-md md:ml-[295px]" id="btn"><a
+                href="https://discord.com/invite/44b8TeRCuS">Join TIME ZONE now</a></button>
+        <audio class="invisible"
+            src="https://file-examples.com/storage/fec91aecf9647d0f79cc0bb/2017/11/file_example_MP3_700KB.mp3"
+            loop="true" width="2" height="0" controls></audio>
+
     </main>
 </body>
+
 </html>

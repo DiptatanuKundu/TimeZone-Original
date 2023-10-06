@@ -8,16 +8,22 @@
     <title>Time Zone Shop</title>
     <link rel="shortcut icon" href="/tz.ico" type="image/x-icon">
     <link rel="stylesheet" href="/shop.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
     <style>
         body {
             /* background-image: url('sale2.gif'); */
             background-size: 700px;
             background-position-x: center;
             background-color: black;
-            background-repeat: no-repeat; /* Add this line */
+            background-repeat: no-repeat;
+            /* Add this line */
+            font-family: 'Poppins', sans-serif;
         }
-        .products{
+
+        .products {
             background-image: url('/bg.jpg');
             /* background-position-y: -60px; */
         }
@@ -63,7 +69,7 @@
             <!-- Poketwo Items -->
             <div class="bg-white m-5 p-4 w-80 rounded-lg shadow-md products border-2 border-black">
                 <h2 class="text-2xl font-semibold mb-4">PokeTwo Items</h2>
-        
+
                 <div class="text-xl mb-2 text-red-800">Pokecoins:</div>
                 <ul class="list-disc ml-6 text-red-600">
                     <li>50K pc - 2M zenis</li>
@@ -72,19 +78,21 @@
                     <li>50K pc - 5 leg/5 myth/5 ub/1 shiny pokemons</li>
                     <li>50K pc - 100 INR (real money)</li>
                 </ul>
-        
+
                 <div class="text-xl my-4 text-red-800">Other Items:</div>
                 <ul class="list-disc ml-6 text-red-600">
-                    <li>Redeems (your only) - 35K pc / 100K pokemeow coins / 500K zenis / 100K owo (limited 5 a month. Any 5 can buy 1 for each in a month)</li>
-                    <li>Incense (your only) - 5K pc / 20K pokemeow coins / 50K zenis / 40K owo (limited 3 a month. Any 3 can buy 1 for each in a month)</li>
+                    <li>Redeems (your only) - 35K pc / 100K pokemeow coins / 500K zenis / 100K owo (limited 5 a month.
+                        Any 5 can buy 1 for each in a month)</li>
+                    <li>Incense (your only) - 5K pc / 20K pokemeow coins / 50K zenis / 40K owo (limited 3 a month. Any 3
+                        can buy 1 for each in a month)</li>
                     <li>3.61 dollar / 300 INR (real money) - 500K pc</li>
                 </ul>
             </div>
-        
+
             <!-- Pokemeow Items -->
             <div class="bg-white m-5 p-4 w-80 rounded-lg shadow-md products border-2 border-black">
                 <h2 class="text-2xl font-semibold mb-4">Pokemeow Items</h2>
-        
+
                 <div class="text-xl mb-2 text-red-800">Pokemeow Coins:</div>
                 <ul class="list-disc ml-6 text-red-600">
                     <li>50K pokemeow coins - 19K pc</li>
@@ -92,18 +100,18 @@
                     <li>50K pokemeow coins - 1M zenis</li>
                     <li>50K pokemeow coins - 20 INR (real money)</li>
                 </ul>
-        
+
                 <div class="text-xl my-4 text-red-800">Other Items:</div>
                 <ul class="list-disc ml-6  text-red-600">
                     <li>Quest help for fun items - 1K pokemeow coins</li>
                     <li>3.61 dollar / 300 INR (real money) - 3M pokemeow coins</li>
                 </ul>
             </div>
-        
+
             <!-- Dragon Ball OV Items -->
             <div class="bg-white m-5 p-4 w-80 rounded-lg shadow-md products border-2 border-black">
                 <h2 class="text-2xl font-semibold mb-4">Dragon Ball OV Items</h2>
-        
+
                 <div class="text-xl mb-2 text-red-800">Zenis:</div>
                 <ul class="list-disc ml-6 text-red-600">
                     <li>500K zenis - 20K pc</li>
@@ -111,18 +119,18 @@
                     <li>500K zenis - 100K owo</li>
                     <li>2M zenis - 100 INR (real money)</li>
                 </ul>
-        
+
                 <div class="text-xl my-4 text-red-800">Other Items:</div>
                 <ul class="list-disc ml-6  text-red-600">
                     <li>ams - 1K zenis / 100 pc / 500 pokemeow coins / 500 owo (each)</li>
                     <li>dbs - 10K zenis / 5K pc / 10K pokemeow coins / 12K owo (each)</li>
                 </ul>
             </div>
-        
+
             <!-- Owo Items -->
             <div class="bg-white m-5 p-4 w-80 rounded-lg shadow-md products border-2 border-black">
                 <h2 class="text-2xl font-semibold mb-4">Owo Items</h2>
-        
+
                 <div class="text-xl mb-2 text-red-800">Owo:</div>
                 <ul class="list-disc ml-6 text-red-600">
                     <li>50K owo - 10K pc</li>
@@ -131,7 +139,7 @@
                 </ul>
             </div>
         </div>
-        
+
 
     </main>
     <script>
@@ -140,14 +148,14 @@
         main.classList.toggle('hidden')
         header.classList.toggle('hidden')
         document.body.style.backgroundImage = "url('/sale2.gif')"
-        setTimeout(()=>{
+        setTimeout(() => {
             main.classList.toggle('hidden')
             header.classList.toggle('hidden')
             document.body.style.backgroundImage = "url('/bg2.jpg')"
             document.body.style.backgroundSize = "1200px"
             document.body.style.backgroundRepeat = "repeat"
             // document.body.classList.add('bg-red-600')
-        },5000)
+        }, 5000)
     </script>
 </body>
 
