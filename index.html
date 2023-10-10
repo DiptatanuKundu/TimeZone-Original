@@ -17,37 +17,42 @@
     <meta name="google-adsense-account" content="ca-pub-9008533922546375">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9008533922546375"
      crossorigin="anonymous"></script>
-    <style>
-
-         /* @font-face {
-            font-family: Book Antiqua Font;
-            src: url('Book Antiqua Font.ttf');
-        } */
-
-        #para{
-            margin-left: 650px;
-        }
-        #para1{
-            margin-left: 600px;
-        }
-        #btn{
-            margin-left: 650px;
-        }
-
-/*
-        @font-face {
-            font-family: Lucida Sans;
-            src: url('LTYPE.TTF');
-        }
-
-        #g {
-            font-family: Lucida Sans
-        } */
-
+     <style>
+        /* Common styles for all screen sizes */
         body {
             background-image: url('bg.gif');
-            background-size: 1600px;
             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #006600; /* Change the background color */
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Add a media query for screens with a maximum width of 768px */
+        @media (max-width: 768px) {
+            #img {
+                width: 80%; /* Adjust the logo size */
+                margin: 0 auto; /* Center the logo */
+            }
+
+            #para {
+                text-align: center; /* Center the text */
+                margin-left: 0;
+            }
+
+            #para1 {
+                text-align: center; /* Center the text */
+                margin-left: 0;
+            }
+
+            #btn {
+                text-align: center; /* Center the button */
+                margin-left: 0;
+            }
         }
     </style>
 
