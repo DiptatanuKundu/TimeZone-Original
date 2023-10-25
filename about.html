@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Time Zone | DISCORD SERVER</title>
@@ -60,11 +60,14 @@
         }
 
         .desc {
-            margin: 10px;
+            /* margin: 10px; */
             background-color: rgb(24, 15, 15);
             border-radius: 10px;
             padding: 20px;
             transition: 0.4s;
+            width: 100px;
+            margin: 10px;
+            min-width: fit-content;
         }
 
         .desc:hover {
@@ -114,7 +117,34 @@
             height: 100%;
             object-fit: cover;
         }
-
+        @media (max-width: 1080px) {
+                .m{
+                    font-size: x-large;
+                }
+                .desc {
+                    padding: 40px !important;
+                    font-size: 40px !important;
+                    /* Adjust padding for smaller screens */
+                }
+                .desc p{
+                    font-size: 30px;
+                }
+                .server-link {
+                    font-size: 30px !important;
+                    /* Reduce font size for smaller screens */
+                }
+                .nav{
+                    padding: 40px;
+                    font-size: xx-large;
+                }
+                .nav ul img{
+                    border-radius: 0 !important;
+                    width: 30px;
+                }
+                .navs:hover{
+                    transform: scale(1.1) !important;
+                }
+            }
         body {
             background-image: url('bg2.jpg');
             background-size: 1500px;
@@ -125,47 +155,55 @@
                 margin: auto;
             }
 
-            @media (min-width:300px) {
-                .server-image {
-                    margin-left: 280px;
-                }
+           
 
-                @media (min-width:1024px) {
+                @media (min-width:300px) {
                     .server-image {
-                        margin-left: 0px;
-                    }
-                }
-
-                @media (max-width:1024px) {
-                    .server-image {
-                        width: 250px;
-                        height: auto;
+                        margin-left: 280px;
                     }
 
-                    #a {
-                        font-size: xx-large;
-                        margin-top: 30px;
+
+                    @media (min-width:1024px) {
+                        .server-image {
+                            margin-left: 0px;
+                        }
+
+                        .desc {
+                            font-size: xx-large;
+                            max-width: fit-content;
+                        }
                     }
 
-                    .server-link {
-                        padding: 40px;
+                    @media (max-width:1024px) {
+                        .server-image {
+                            width: 250px;
+                            height: auto;
+                        }
+
+                        #a {
+                            font-size: xx-large;
+                            margin-top: 30px;
+                        }
+
+                        .server-link {
+                            padding: 40px;
+                        }
                     }
                 }
             }
-        }
 
-        .navs:hover {
-            transform: scale(1.3);
-            transition-duration: .5s;
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
-            padding: 0 2px;
-        }
+            .navs:hover {
+                transform: scale(1.3);
+                transition-duration: .5s;
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+                padding: 0 2px;
+            }
 
-        .logo:hover {
-            transform: scale(1.3);
-            transition-duration: .5s;
-        }
+            .logo:hover {
+                transform: scale(1.3);
+                transition-duration: .5s;
+            }
     </style>
 
 </head>
@@ -190,7 +228,7 @@
         }
     </script>
     <header>
-        <nav class="bg-black">
+        <nav class="bg-black nav">
             <ul class="flex xl:p-4 p-3 space-x-4 space-x-7">
                 <img src="time_zone.jpg" class="cursor-pointer logo xl:w-7 w-6 rounded-full" alt="">
                 <li class="xl:mr-36 text-blue-600">Time Zone</li>
@@ -209,11 +247,11 @@
         </div>
         <div class="description">
             <div class="m">
-                <h3>Why join us, you ask? Well, let us show you why we're the place to be:
+                <h3>Why join us, you ask? Well, let us show you why we're the place to be
                 </h3>
             </div>
             <div class="d1 desc">
-                <h3>🤖 Bot Playground:</h3>
+                <h3>🤖 Bot Playground</h3>
                 <br>
                 <p> Get ready to explore a vast array of bots that will not only make your server stand out but also
                     supercharge your interactions. From utility bots to entertainment and music bots, we've got the
@@ -221,20 +259,20 @@
                     take your Discord server experience to new heights.</p>
             </div>
             <div class="d2 desc">
-                <h3>🎁 Daily Giveaways: </h3>
+                <h3>🎁 Daily Giveaways </h3>
                 <br>
                 <p>Who doesn't love surprises? Participate in our daily giveaways and stand a chance to win exciting
                     prizes. We're all about spreading joy and rewarding our awesome community members.</p>
             </div>
             <div class="d3 desc">
-                <h3>💼 Private Bots:</h3>
+                <h3>💼 Private Bots</h3>
                 <br>
                 <p>Need a customized solution for your server's unique needs? We've got you covered! Check out our range
                     of private bots that can be tailored to match your server's specific requirements. It's like having
                     a personal assistant for your server.</p>
             </div>
             <div class="d4 desc">
-                <h3>🎮 Bot Games:</h3>
+                <h3>🎮 Bot Games</h3>
                 <br>
                 <p>And if you're a gaming enthusiast, you're in for a treat! Play popular bot games like Pokétwo,
                     PokéMeow, Dragon Ball OV, OwO, and many more. Challenge your friends, earn rewards, and have a blast
@@ -249,8 +287,12 @@
                     our
                     vibrant and welcoming community.</p>
             </div>
-            <div class="btn"><a href="https://discord.com/invite/44b8TeRCuS"><button class="server-link">Join now</button></a></div>
-            <div class="desc"><p>Don't miss out on all the fun, exciting features, and awesome people that make our server unique. We can't wait to welcome you and see you become a part of our Ultimate Discord family! 🎉</p></div>
+            <div class="btn"><a href="https://discord.com/invite/44b8TeRCuS"><button class="server-link">Join
+                        now</button></a></div>
+            <div class="desc">
+                <p>Don't miss out on all the fun, exciting features, and awesome people that make our server unique. We
+                    can't wait to welcome you and see you become a part of our Ultimate Discord family! 🎉</p>
+            </div>
         </div>
     </main>
 
