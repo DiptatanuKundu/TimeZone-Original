@@ -14,7 +14,7 @@
     <meta name="description" content="Here you will get all you want to know about Time Zone">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9008533922546375"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <style>
         /* body {
             background: linear-gradient(120deg, #2980b9, #8e44ad);
@@ -76,40 +76,53 @@
             background-image: url('bg2.jpg');
             background-size: 1500px;
 
-        body { 
-            background-image:url('bg2.jpg');
-            background-size:1500px;
-            margin: auto; 
+            body {
+                background-image: url('bg2.jpg');
+                background-size: 1500px;
+                margin: auto;
+            }
+
+            @media (min-width:300px) {
+                .server-image {
+                    margin-left: 280px;
+                }
+
+                @media (min-width:1024px) {
+                    .server-image {
+                        margin-left: 0px;
+                    }
+                }
+
+                @media (max-width:1024px) {
+                    .server-image {
+                        width: 250px;
+                        height: auto;
+                    }
+
+                    #a {
+                        font-size: xx-large;
+                        margin-top: 30px;
+                    }
+
+                    .server-link {
+                        padding: 40px;
+                    }
+                }
+            }
         }
 
-        @media (min-width:300px) {
-            .server-image {
-                margin-left: 280px;
-            }
-
-            @media (min-width:1024px) {
-                .server-image {
-                    margin-left: 0px;
-                }
-            }
-
-            @media (max-width:1024px) {
-                .server-image {
-                    width: 250px;
-                    height: auto;
-                }
-
-                #a {
-                    font-size: xx-large;
-                    margin-top: 30px;
-                }
-
-                .server-link {
-                    padding: 40px;
-                }
-            }
+        .navs:hover {
+            transform: scale(1.3);
+            transition-duration: .5s;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            padding: 0 2px;
         }
-    }
+
+        .logo:hover {
+            transform: scale(1.3);
+            transition-duration: .5s;
+        }
     </style>
 
 </head>
@@ -136,17 +149,16 @@
     <header>
         <nav class="bg-black">
             <ul class="flex xl:p-4 p-3 space-x-4 space-x-7">
-                <img src="time_zone.jpg" class=" xl:w-7 w-6 rounded-full" alt="">
+                <img src="time_zone.jpg" class="cursor-pointer logo xl:w-7 w-6 rounded-full" alt="">
                 <li class="xl:mr-36 text-blue-600">Time Zone</li>
-                <li class="cursor-pointer text-white" onclick="home()">Home</li>
-                <li class="cursor-pointer text-white" onclick="about()">About</li>
-                <li class="cursor-pointer text-white" onclick="contact()">Contact us</li>
-                <li class="cursor-pointer text-white" onclick="bots()">Our Bots</li>
-                <li class="cursor-pointer text-white" onclick="shop()">Shop</li>
+                <li class="cursor-pointer text-white navs" onclick="home()">Home</li>
+                <li class="cursor-pointer text-white navs" onclick="about()">About</li>
+                <li class="cursor-pointer text-white navs" onclick="contact()">Contact us</li>
+                <li class="cursor-pointer text-white navs" onclick="bots()">Our Bots</li>
+                <li class="cursor-pointer text-white navs" onclick="shop()">Shop</li>
             </ul>
         </nav>
 
-    </header>
     </header>
     <main>
         <div class="container">

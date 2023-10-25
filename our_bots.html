@@ -13,10 +13,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <title>Our Bots</title>
-    <meta name="google-adsense-account" content="ca-pub-9008533922546375">  
+    <meta name="google-adsense-account" content="ca-pub-9008533922546375">
     <style>
-        body{
+        body {
             font-family: 'Poppins', sans-serif;
+        }
+
+        .navs:hover {
+            transform: scale(1.3);
+            transition-duration: .5s;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            padding: 0 2px;
+        }
+
+        .logo:hover {
+            transform: scale(1.3);
+            transition-duration: .5s;
+        }
+
+        @keyframes example {
+            from {
+                color: #F7E29B;
+            }
+
+            to {
+                color: rgb(255, 0, 0);
+            }
+        }
+
+        .txt {
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: 50;
         }
     </style>
 </head>
@@ -42,20 +71,22 @@
     <header>
         <nav class="bg-green-600">
             <ul class="flex xl:p-4 p-3 space-x-4 space-x-7">
-                <img src="time_zone.jpg" class=" xl:w-7 w-6 rounded-full" alt="">
+                <img src="time_zone.jpg" class="cursor-pointer logo xl:w-7 w-6 rounded-full" alt="">
                 <li class="xl:mr-36 text-blue-600">Time Zone</li>
-                <li class="cursor-pointer text-white" onclick="home()">Home</li>
-                <li class="cursor-pointer text-white" onclick="about()">About</li>
-                <li class="cursor-pointer text-white" onclick="contact()">Contact us</li>
-                <li class="cursor-pointer text-white" onclick="bots()">Our Bots</li>
-                <li class="cursor-pointer text-white" onclick="shop()">Shop</li>
+                <li class="cursor-pointer text-white navs" onclick="home()">Home</li>
+                <li class="cursor-pointer text-white navs" onclick="about()">About</li>
+                <li class="cursor-pointer text-white navs" onclick="contact()">Contact us</li>
+                <li class="cursor-pointer text-white navs" onclick="bots()">Our Bots</li>
+                <li class="cursor-pointer text-white navs" onclick="shop()">Shop</li>
             </ul>
         </nav>
 
     </header>
     <main>
         <div>
-            <h1 class="xl:text-5xl xl:ml-[635px] text-[#F7E29B] xl:mt-5 mt-5 ml-[165px] md:ml-[335px] font-bold">Coming Soon</h1>
+            <h1 class="xl:text-5xl xl:ml-[635px] text-[#F7E29B] xl:mt-5 mt-5 ml-[165px] md:ml-[335px] font-bold txt">
+                Coming
+                Soon</h1>
         </div>
     </main>
 </body>
