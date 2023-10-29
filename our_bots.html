@@ -67,11 +67,14 @@
         let bots = () => {
             location.replace("our_bots.html")
         }
+        let join = () => {
+            location.replace("https://discord.com/invite/44b8TeRCuS")
+        }
     </script>
     <header>
         <nav class="bg-green-600">
             <ul class="flex xl:p-4 p-3 space-x-4 space-x-7">
-                <img src="time_zone.jpg" class="cursor-pointer logo xl:w-7 w-6 rounded-full" alt="">
+                <img src="time_zone.jpg" class="cursor-pointer logo xl:w-7 w-6 rounded-full" onclick="join()" alt="">
                 <li class="xl:mr-36 text-blue-600">Time Zone</li>
                 <li class="cursor-pointer text-white navs" onclick="home()">Home</li>
                 <li class="cursor-pointer text-white navs" onclick="about()">About</li>

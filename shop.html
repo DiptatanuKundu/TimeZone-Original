@@ -68,11 +68,16 @@
 </head>
 
 <body>
+    <script>
+        let join = () => {
+            location.replace("https://discord.com/invite/44b8TeRCuS")
+        }
+    </script>
     <header id="header">
         <nav class="bg-black">
             <ul class="flex xl:p-1 p-3 space-x- md:space-x-">
                 <ul class="flex xl:p-4 p-3 space-x-4 md:space-x-7">
-                    <img src="/time_zone.jpg" class="xl:w-7 w-6 rounded-full logo" alt="" />
+                    <img src="/time_zone.jpg" class="xl:w-7 w-6 rounded-full logo" onclick="join()" alt="" />
                     <li class="xl:mr-36 text-blue-600">Time Zone</li>
                     <li class="cursor-pointer text-white navs">
                         <a href="/index.html">Home </a>
