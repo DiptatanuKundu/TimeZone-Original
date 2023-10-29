@@ -30,6 +30,16 @@
             background-image: url('/bg.jpg');
             /* background-position-y: -60px; */
         }
+        .products:hover{
+            transform: scale(1.03);
+        }
+        .product {
+            background-image: url('/bg.jpg');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
 
         .navs:hover {
             transform: scale(1.3);
@@ -42,6 +52,17 @@
         .logo:hover {
             transform: scale(1.3);
             transition-duration: .5s;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .items {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+            }
+
         }
     </style>
 </head>
@@ -77,10 +98,10 @@
         </nav>
     </header>
     <main id="main" class="mt-5">
-        <div class="bg-white -my-4 w-80 h-10 mx-[600px] products">
-            <p class="text-3xl text-center">Bot Games Shop</p>
+        <div class="bg-white -my-4 w-80 h-10 mx-[600px] product">
+            <p class="text-3xl text-center title">Bot Games Shop</p>
         </div>
-        <div class="flex space-x-10 mx-16">
+        <div class="flex items space-x-10 mx-16">
 
             <!-- Poketwo Items -->
             <div class="bg-white m-5 p-4 w-80 rounded-lg shadow-md products border-2 border-black">
